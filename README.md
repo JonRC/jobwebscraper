@@ -1,29 +1,25 @@
-# UberHub
+# UberHub - Job webscraper
 
-## Objetivo
+UberHub Job webscraper é uma automação para obter informações de vagas de emprego
+em empresas de Uberlândia.
 
-Fazer web scraping de um site bem estruturado de vagas.
-Zup
+## Empresas disponíveis
+- [x] Zup
 
-## Output
+Estamos começando. Mas a idea é adicionar outras empresas.
 
-Nome das vagas
-Nome da empresa
-Linkd para se candidatar
+Possuí alguma sugestão de empresa? Mande um pull request, entre em contato no meu email jonarc06@gmail.com ou contate o Ferdinando.
+
+## Como usar?
+
+Você pode obter as vagas prontas para divulgação ou em JSON para utilizar de forma programática.
+
+- Formatado: https://jobwebscraper.herokuapp.com/companies/formatted
+- Formatado para whatsapp: https://jobwebscraper.herokuapp.com/companies/formatted/whatsapp
+- JSON: https://jobwebscraper.herokuapp.com/companies
 
 ## Principais tecnologias
 
 Javascript
 Typescript
 NodeJs
-
-
-## Passos
-
-- [X] Criar serviço que obtem o HTML
-- [X] Transformar em DOM
-- [X] Usar a DOM para obter nome das vagas
-- [X] Criar servidor (express)
-- [X] Rota para obter companies
-- [X] Rota para obter companies formatadas
-- [ ] Deploy (Heroku)
