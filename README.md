@@ -8,7 +8,7 @@ em empresas de Uberlândia.
 
 Estamos começando. Mas a idea é adicionar outras empresas.
 
-Possuí alguma sugestão de empresa? Mande um pull request, entre em contato no meu email jonarc06@gmail.com ou contate o Ferdinando.
+Possui alguma sugestão de empresa? Mande um pull request, entre em contato no meu email jonarc06@gmail.com ou contate o Ferdinando.
 
 ## Como usar?
 
