@@ -2,7 +2,8 @@ import { Job } from './Job'
 
 export type Company = {
   name: CompanyName
-  jobSite: string
+  jobSiteURL: string
+  jobSiteShortenURL: string
   jobs: Job[]
 }
 

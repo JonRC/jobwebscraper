@@ -25,5 +25,5 @@ NodeJs
 - [X] Usar a DOM para obter nome das vagas
 - [X] Criar servidor (express)
 - [X] Rota para obter companies
-- [ ] Rota para obter companies formatadas
+- [X] Rota para obter companies formatadas
 - [ ] Deploy (Heroku)

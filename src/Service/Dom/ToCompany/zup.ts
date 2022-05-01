@@ -11,7 +11,8 @@ export const zup: zup = document => {
   const jobs = jobGroups.flatMap(jobGroupToJobs)
 
   const company: Company = {
-    jobSite: 'https://boards.greenhouse.io/zupinnovation',
+    jobSiteURL: 'https://boards.greenhouse.io/zupinnovation',
+    jobSiteShortenURL: 'bit.ly/3bgQAfg',
     jobs,
     name: 'zup'
   }
