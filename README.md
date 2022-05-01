@@ -18,5 +18,8 @@ NodeJs
 ## Passos
 [X] Criar serviço que obtem o HTML
 [X] Transformar em DOM
-[] Usar a DOM para obter nome das vagas
-[] Criar servidor
+[X] Usar a DOM para obter nome das vagas
+[X] Criar servidor (express)
+[X] Rota para obter companies
+[] Rota para obter companies formatadas
+[] Deploy

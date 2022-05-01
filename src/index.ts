@@ -1,6 +1,3 @@
-import { FetchSite, Dom } from 'Service'
+import * as Server from 'Server'
 
-FetchSite.zup()
-  .then(Dom.fromHtml)
-  .then(Dom.toCompany.zup)
-  .then(company => {})
+Server.init()

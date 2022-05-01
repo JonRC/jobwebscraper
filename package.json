@@ -6,6 +6,8 @@
   "author": "jonrc <jonarc06@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
     "@types/jsdom": "^16.2.14",
     "@types/node": "^17.0.30",
     "@typescript-eslint/eslint-plugin": "^5.21.0",
@@ -19,15 +21,19 @@
     "eslint-plugin-promise": "^6.0.0",
     "prettier": "^2.6.2",
     "ts-node": "^10.7.0",
+    "ts-node-dev": "^1.1.8",
     "typescript": "^4.6.4"
   },
   "scripts": {
     "build": "rm -fr dist && tsc",
-    "dev": "ts-node -T -r tsconfig-paths/register src/index.ts",
+    "dev": "ts-node-dev -T -r tsconfig-paths/register src/index.ts",
     "start": "TS_NODE_BASEURL=./dist node -r tsconfig-paths/register dist/index.js"
   },
   "dependencies": {
     "axios": "^0.27.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "express-async-errors": "^3.1.1",
     "jsdom": "^19.0.0",
     "tsconfig-paths": "^3.14.1"
   }
