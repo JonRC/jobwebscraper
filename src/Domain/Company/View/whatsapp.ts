@@ -1,8 +1,8 @@
 import { Job, Company } from 'Entities'
 
-type companiesToWhatsapp = (inputs: Company[]) => string
+type whatsapp = (inputs: Company[]) => string
 
-export const companiesToWhatsapp: companiesToWhatsapp = inputs =>
+export const whatsapp: whatsapp = inputs =>
   inputs.reduce(
     (formattedText, company) =>
       formattedText +

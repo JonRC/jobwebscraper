@@ -12,10 +12,10 @@ Possui alguma sugestão de empresa? Mande um pull request, entre em contato no m
 
 ## Como usar?
 
-Você pode obter as vagas prontas para divulgação ou em JSON para utilizar de forma programática.
+Você pode obter as vagas formatadas para divulgação ou em JSON para utilizar de forma programática.
 
-- Formatado: https://jobwebscraper.herokuapp.com/companies/formatted
-- Formatado para whatsapp: https://jobwebscraper.herokuapp.com/companies/formatted/whatsapp
+- HTML: https://jobwebscraper.herokuapp.com/companies?format=html
+- Whatsapp: https://jobwebscraper.herokuapp.com/companies?format=whatsapp
 - JSON: https://jobwebscraper.herokuapp.com/companies
 
 ## Principais tecnologias

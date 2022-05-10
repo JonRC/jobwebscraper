@@ -1,8 +1,8 @@
 import { Job, Company } from 'Entities'
 
-type companies = (inputs: Company[]) => string
+type html = (inputs: Company[]) => string
 
-export const companies: companies = inputs =>
+export const html: html = inputs =>
   inputs.reduce(
     (formattedText, company) =>
       formattedText +
