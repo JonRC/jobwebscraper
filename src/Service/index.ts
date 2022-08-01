@@ -1,2 +1,2 @@
-export * as FetchSite from './FetchSite'
+export * as CompanyProvider from './CompanyProvider'
 export * as Dom from './Dom'

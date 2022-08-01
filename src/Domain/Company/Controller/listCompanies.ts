@@ -36,5 +36,5 @@ export const listCompanies = async (
     return response.send(htmlFormattedCompanies)
   }
 
-  return response.json(companies)
+  return response.json({ companies })
 }
