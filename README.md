@@ -5,11 +5,11 @@ O objetivo desse projeto é fornecer serviços do [Uberhub](http://www.uberhub.c
 ## Serviços
 ### Endpoints de vagas
 
-Lista vagas das empresas disponíveis.
+Listar vagas das empresas disponíveis.  
 **URL:** https://jobwebscraper.herokuapp.com/companies  
 _resposta: array de [Company](https://github.com/JonRC/uberhub-api/blob/7cdf539a542ecbd38fdf0052afe503887eda28f2/src/Entities/Company.ts)_
 
-Respostas prontas para uso:
+Respostas prontas para uso:  
 Whatsapp: https://jobwebscraper.herokuapp.com/companies?format=whatsapp  
 HTML: https://jobwebscraper.herokuapp.com/companies?format=html
 
