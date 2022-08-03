@@ -1,25 +1,27 @@
-# UberHub - Job webscraper
+# uberHub-api
 
-UberHub Job webscraper é uma automação para obter informações de vagas de emprego
-em empresas de Uberlândia.
+O objetivo desse projeto é fornecer serviços do [Uberhub](http://www.uberhub.com.br/) por web API.
 
-## Empresas disponíveis
-- [x] Zup
+## Serviços
+### Endpoints de vagas
 
-Estamos começando. Mas a idea é adicionar outras empresas.
+Lista vagas das empresas disponíveis.
+**URL:** https://jobwebscraper.herokuapp.com/companies  
+_resposta: array de [Company](https://github.com/JonRC/uberhub-api/blob/7cdf539a542ecbd38fdf0052afe503887eda28f2/src/Entities/Company.ts)_
 
-Possui alguma sugestão de empresa? Mande um pull request, entre em contato no meu email jonarc06@gmail.com ou contate o Ferdinando.
+Respostas prontas para uso:
+Whatsapp: https://jobwebscraper.herokuapp.com/companies?format=whatsapp  
+HTML: https://jobwebscraper.herokuapp.com/companies?format=html
 
-## Como usar?
+Empresas disponíveis
+- [x] [Zup](https://boards.greenhouse.io/zupinnovation)
+- [x] [TQI](https://vagas.tqi.com.br)
+- [ ] _Sugira outras empresas [abrindo uma issue](https://github.com/JonRC/uberhub-api/issues/new)_
 
-Você pode obter as vagas formatadas para divulgação ou em JSON para utilizar de forma programática.
-
-- HTML: https://jobwebscraper.herokuapp.com/companies?format=html
-- Whatsapp: https://jobwebscraper.herokuapp.com/companies?format=whatsapp
-- JSON: https://jobwebscraper.herokuapp.com/companies
 
 ## Principais tecnologias
 
-Javascript
-Typescript
-NodeJs
+Javascript  
+Typescript  
+NodeJs  
+Puppeteer
