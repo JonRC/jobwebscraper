@@ -11,7 +11,7 @@ type TqiJob = {
 }
 
 export const getCompany = async () => {
-  const browser = await puppeteer.launch({ headless: false })
+  const browser = await puppeteer.launch({ args: ['--no-sandbox'] })
   const page = await browser.newPage()
   await page.goto('https://vagas.tqi.com.br/')
   await page.waitForFunction(
