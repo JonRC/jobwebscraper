@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-export const zup = async (): Promise<string> => {
+export const getHtml = async (): Promise<string> => {
   const zupJobURL = 'https://boards.greenhouse.io/zupinnovation'
 
   const { data: response } = await axios.get<string>(zupJobURL)

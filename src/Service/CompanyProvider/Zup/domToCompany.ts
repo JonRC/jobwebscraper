@@ -2,9 +2,9 @@ import { Job } from 'Entities'
 import { Company } from 'Entities/Company'
 import * as Util from 'Util'
 
-type zup = (document: Document) => Company
+type domToCompany = (document: Document) => Company
 
-export const zup: zup = document => {
+export const domToCompany: domToCompany = document => {
   const jobGroupList = document.querySelectorAll<HTMLSelectElement>('.level-0')
   const jobGroups = Array.from(jobGroupList)
 

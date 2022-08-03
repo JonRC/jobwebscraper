@@ -1,14 +1,25 @@
 import { Company } from 'Entities/Company'
-import { Dom, CompanyProvider } from 'Service'
+import { CompanyProvider } from 'Service'
 
 type listCompanies = () => Promise<Company[]>
 
-export const listCompanies: listCompanies = async () => {
-  const company = await CompanyProvider.zup()
-    .then(Dom.fromHtml)
-    .then(Dom.toCompany.zup)
+export const listCompanies: listCompanies = () => {
+  const getCompanyProcesses = companyProviders.map(companyProvider =>
+    companyProvider()
+  )
 
-  const companies = [company]
+  const companies = Promise.allSettled(getCompanyProcesses).then(results =>
+    results.filter(isFulfilled).map(result => result.value)
+  )
 
   return companies
 }
+
+const companyProviders: Array<() => Promise<Company>> = [
+  CompanyProvider.Tqi.getCompany,
+  CompanyProvider.Zup.getCompany
+]
+
+const isFulfilled = <T>(
+  result: PromiseSettledResult<T>
+): result is PromiseFulfilledResult<T> => result.status === 'fulfilled'
