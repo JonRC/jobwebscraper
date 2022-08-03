@@ -18,7 +18,6 @@ Empresas disponíveis
 - [x] [TQI](https://vagas.tqi.com.br)
 - [ ] _Sugira outras empresas [abrindo uma issue](https://github.com/JonRC/uberhub-api/issues/new)_
 
-
 ## Principais tecnologias
 
 Javascript  
