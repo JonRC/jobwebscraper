@@ -1,4 +1,4 @@
-# uberHub-api
+# UberHub-api
 
 O objetivo desse projeto é fornecer serviços do [Uberhub](http://www.uberhub.com.br/) por web API.
 
