@@ -1,8 +1,13 @@
-import {Cluster} from 'puppeteer-cluster'
+import { Cluster } from 'puppeteer-cluster'
 
-export const cluster = () => {
-  const puppeteerCluster = Cluster.launch({
-    concurrency: Cluster.CONCURRENCY_BROWSER,
-    maxConcurrency: 3
-  })
-}
+export const clusterInstance = Cluster.launch({
+  concurrency: Cluster.CONCURRENCY_BROWSER,
+  maxConcurrency: 2,
+  puppeteerOptions: {
+    headless: true,
+    args: ['--no-sandbox']
+  },
+  timeout: 60000
+})
+
+export const puppeteerCluster = () => clusterInstance

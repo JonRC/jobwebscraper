@@ -1,5 +1,6 @@
 import { Company, Job } from 'Entities'
 import puppeteer from 'puppeteer'
+import { task } from 'Service/PuppeteerCluster'
 
 type TqiJob = {
   id: string
@@ -10,7 +11,7 @@ type TqiJob = {
   description: string
 }
 
-export const getCompany = async () => {
+export const getCompany = task(async () => {
   const browser = await puppeteer.launch({ args: ['--no-sandbox'] })
   const page = await browser.newPage()
   await page.goto('https://vagas.tqi.com.br/')
@@ -56,4 +57,4 @@ export const getCompany = async () => {
   await browser.close()
 
   return company
-}
+})
