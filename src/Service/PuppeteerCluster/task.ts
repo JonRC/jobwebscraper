@@ -3,7 +3,7 @@ import { puppeteerCluster } from './puppeteerCluster'
 import os from 'os'
 
 export const task =
-  <Input, Output>(
+  <Input = undefined, Output = any>(
     taskFunction: (page: Page, input?: Input) => Promise<Output>
   ) =>
   (input?: Input) =>

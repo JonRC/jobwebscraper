@@ -35,7 +35,15 @@ export const listCompanies: listCompanies = async () => {
 }
 
 const companyProviders: Array<() => Promise<Company>> = [
+  CompanyProvider.GrupoReal.getCompany,
+  CompanyProvider.IpeDigital.getCompany,
+  CompanyProvider.Martins.getCompany,
+  CompanyProvider.Sankhya.getCompany,
+  CompanyProvider.SocialBank.getCompany,
+  CompanyProvider.T10.getCompany,
   CompanyProvider.Tqi.getCompany,
+  CompanyProvider.Tribanco.getCompany,
+  CompanyProvider.ValeCard.getCompany,
   CompanyProvider.Zup.getCompany
 ]
 

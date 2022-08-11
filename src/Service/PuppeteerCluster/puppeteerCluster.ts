@@ -2,7 +2,7 @@ import { Cluster } from 'puppeteer-cluster'
 
 export const clusterInstance = Cluster.launch({
   concurrency: Cluster.CONCURRENCY_BROWSER,
-  maxConcurrency: 2,
+  maxConcurrency: 3,
   puppeteerOptions: {
     headless: true,
     args: ['--no-sandbox']

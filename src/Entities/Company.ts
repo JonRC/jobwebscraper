@@ -7,6 +7,17 @@ export type Company = {
   jobs: Job[]
 }
 
-export const validCompanyNames = ['zup', 'tqi'] as const
+export const validCompanyNames = [
+  'zup',
+  'tqi',
+  't10',
+  'valeCard',
+  'ipeDigital',
+  'martins',
+  'grupoReal',
+  'socialBank',
+  'sankhya',
+  'tribanco'
+] as const
 
 export type CompanyName = typeof validCompanyNames[number]
