@@ -14,7 +14,8 @@ export const domToCompany: domToCompany = document => {
     jobSiteURL: 'https://boards.greenhouse.io/zupinnovation',
     jobSiteShortenURL: 'bit.ly/3bgQAfg',
     jobs,
-    name: 'zup'
+    name: 'zup',
+    createdAt: new Date()
   }
 
   return company

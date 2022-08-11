@@ -50,7 +50,8 @@ export const getCompany = task(async () => {
     jobs,
     jobSiteURL: 'https://vagas.tqi.com.br/',
     jobSiteShortenURL: 'bit.ly/2RKOg9C',
-    name: 'tqi'
+    name: 'tqi',
+    createdAt: new Date()
   }
 
   await page.close()

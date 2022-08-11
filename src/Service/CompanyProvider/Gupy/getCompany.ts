@@ -50,7 +50,8 @@ export const getCompany = ({
       jobs,
       jobSiteShortenURL,
       jobSiteURL,
-      name: companyName
+      name: companyName,
+      createdAt: new Date()
     }
 
     return company

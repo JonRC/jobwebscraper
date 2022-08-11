@@ -5,6 +5,7 @@ export type Company = {
   jobSiteURL: string
   jobSiteShortenURL: string
   jobs: Job[]
+  createdAt: Date
 }
 
 export const validCompanyNames = [
